@@ -1,0 +1,13 @@
+{
+    "priority": 2,
+    "request": {
+        "method": "POST",
+        "url": "/check"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "has_virus": false
+        }
+    }
+}

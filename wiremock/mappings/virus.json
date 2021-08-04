@@ -1,12 +1,18 @@
 {
+    "priority": 1,
     "request": {
         "method": "POST",
-        "url": "/check"
+        "url": "/check",
+        "headers": {
+            "Content-Disposition": {
+                "matches": "^(.*)filename=\"(.*).jpg\"(.*)$"
+            }
+        }
     },
     "response": {
         "status": 200,
         "jsonBody": {
-            "has_virus": false
+            "has_virus": true
         }
     }
 }
